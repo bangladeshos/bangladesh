@@ -177,9 +177,9 @@ To learn about those, see the [Git Configuration](https://git-scm.com/book/en/v2
 
 <!--
 	Article sourced from https://github.com/bangladeshos/bangladesh
-	Licensed under MIT License, (C) Bangladesh Open Source <info@khulnasoft.com> 2023
+	Licensed under MIT License, (c) 2024 Bangladesh Open Source
 	---
-	This file was auto-generated at 2024-09-22 19:59:51.624978
-	from /workspaces/bangladesh/guides/local-git-setup.md
-	using /workspaces/bangladesh/lib/copy_resources_to_site.py
+	This file was auto-generated at 2024-09-22 20:05:08.113188
+	from /home/runner/work/bangladesh/bangladesh/guides/local-git-setup.md
+	using /home/runner/work/bangladesh/bangladesh/lib/copy_resources_to_site.py
 -->
