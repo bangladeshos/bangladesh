@@ -90,7 +90,7 @@ In conclusion, open source is a powerful force in the world of technology, promo
 	Article sourced from https://github.com/bangladeshos/bangladeshos
 	Licensed under MIT License, (C) Bangladesh Open Source <info@khulnasoft.com> 2023
 	---
-	This file was auto-generated at 2024-09-22 19:42:27.200091
-	from /workspaces/bangladeshos.github.io/guides/why-open-source.md
-	using /workspaces/bangladeshos.github.io/lib/copy_resources_to_site.py
+	This file was auto-generated at 2024-09-22 19:49:20.100263
+	from /home/runner/work/bangladeshos.github.io/bangladeshos.github.io/guides/why-open-source.md
+	using /home/runner/work/bangladeshos.github.io/bangladeshos.github.io/lib/copy_resources_to_site.py
 -->

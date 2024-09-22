@@ -53,7 +53,7 @@ The following article should give you some pointers that you can use to help you
 	Article sourced from https://github.com/bangladeshos/bangladeshos
 	Licensed under MIT License, (C) Bangladesh Open Source <info@khulnasoft.com> 2023
 	---
-	This file was auto-generated at 2024-09-22 19:42:27.205687
-	from /workspaces/bangladeshos.github.io/guides/open-source-for-businesses.md
-	using /workspaces/bangladeshos.github.io/lib/copy_resources_to_site.py
+	This file was auto-generated at 2024-09-22 19:49:20.103136
+	from /home/runner/work/bangladeshos.github.io/bangladeshos.github.io/guides/open-source-for-businesses.md
+	using /home/runner/work/bangladeshos.github.io/bangladeshos.github.io/lib/copy_resources_to_site.py
 -->
