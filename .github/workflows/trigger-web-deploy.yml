@@ -7,7 +7,7 @@ on:
       - main
     paths:
       - 'web/**'
-      - 'bangladeshos.yml'
+      - 'bangladesh-bot.yml'
 
 jobs:
   # This will re-deploy bangladeshos.khulnasoft.com on Netlify

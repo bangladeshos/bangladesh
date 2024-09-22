@@ -7,7 +7,7 @@ body:
       value: >-
         If you want your name to be listed in the readme, you should submit a
         pull request, editing
-        [`bangladeshos.yml`](https://github.com/BangladeshOS/bangladesh/blob/main/bangladeshos.yml)
+        [`bangladesh-bot.yml`](https://github.com/BangladeshOS/bangladesh/blob/main/bangladesh-bot.yml)
         and following the guidelines in the [contributing
         doc](https://github.com/BangladeshOS/bangladesh/blob/main/.github/CONTRIBUTING.md).
         If you're unsure how to get started, there are plenty of
@@ -31,7 +31,7 @@ body:
     id: question
     attributes:
       label: Question
-      description: Reference of question you wish to answer (see bangladeshos.yml for list)
+      description: Reference of question you wish to answer (see bangladesh-bot.yml for list)
       options:
         - Q1
         - Q2

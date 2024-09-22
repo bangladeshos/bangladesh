@@ -33,7 +33,7 @@ Not sure what to add or work on? Here's 10 ideas to get you started!
 
 This is probably the easiest place to start for first-time contributors. On the readme, there's a list of names and comments from developers, and you can add yours in there too! 
 
-It's important to note that you don't put this in the readme directly, but rather edit the [`bangladeshos.yml`](https://github.com/BangladeshOS/bangladesh/blob/main/bangladeshos.yml) file instead (there's a template at the top), this is then fetches some additional info from the GitHub API (like your name, picture and stargazer status) and inserts it into the readme using [this workflow](https://github.com/BangladeshOS/bangladesh/blob/main/.github/workflows/insert-comments.yml) running on GitHub Actions.
+It's important to note that you don't put this in the readme directly, but rather edit the [`bangladesh-bot.yml`](https://github.com/BangladeshOS/bangladesh/blob/main/bangladesh-bot.yml) file instead (there's a template at the top), this is then fetches some additional info from the GitHub API (like your name, picture and stargazer status) and inserts it into the readme using [this workflow](https://github.com/BangladeshOS/bangladesh/blob/main/.github/workflows/insert-comments.yml) running on GitHub Actions.
 
 ### Guides
 
@@ -114,7 +114,7 @@ When submitting a pull request, you must:
 - Agree to follow the Code of Conduct
 - Not submit low-effort or AI-generated content
 
-When adding your name and response to [`bangladeshos.yml`](https://github.com/BangladeshOS/bangladesh/blob/main/bangladeshos.yml),
+When adding your name and response to [`bangladesh-bot.yml`](https://github.com/BangladeshOS/bangladesh/blob/main/bangladesh-bot.yml),
 you must ensure that:
 - Your addition must be appended to the end of the file
 - The file must end in a single blank line

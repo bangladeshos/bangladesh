@@ -3,7 +3,7 @@ name: 🚦 Check Contribution
 on:
   pull_request_target:
     paths:
-      - 'bangladeshos.yml'
+      - 'bangladesh-bot.yml'
     types:
       - opened
       - synchronize

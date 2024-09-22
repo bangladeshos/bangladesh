@@ -218,7 +218,7 @@ graph LR
 ## Bangladesh OpenSource
 
 The following users have contributed to this repo, by sharing their thoughts and ideas about open source.<br />
-Join them by editing the [`bangladeshos.yml`](/bangladeshos.yml) file, and following the instructions in [`CONTRIBUTING.md`](/.github/CONTRIBUTING.md) to submit a PR.
+Join them by editing the [`bangladesh-bot.yml`](/bangladesh-bot.yml) file, and following the instructions in [`CONTRIBUTING.md`](/.github/CONTRIBUTING.md) to submit a PR.
 
 
 <!-- bangladeshos-start -->
@@ -349,12 +349,12 @@ User-generated content is inserted automatically, using the Python scripts in th
 - [![📖 Copy guides to website](https://github.com/BangladeshOS/bangladesh/actions/workflows/copy-guides.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/copy-guides.yml) - _Combines `guides/` with metadata in `resources.yml`, to deploy site_
 - [![🌍 Deploy to GitHub Pages](https://github.com/BangladeshOS/bangladesh/actions/workflows/deploy-website.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/deploy-website.yml) - _Builds and deploys the latest version of `web/` to GitHub Pages_
 - [![👥 Insert Credits](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-credits.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-credits.yml) - _Inserts credits to helpful users, contributors and sponsors into the readme_
-- [![💬 Inserts Contributor Content](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-comments.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-comments.yml) - _Generates user-contributed content from `bangladeshos.yml`_
+- [![💬 Inserts Contributor Content](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-comments.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-comments.yml) - _Generates user-contributed content from `bangladesh-bot.yml`_
 - [![📚 Inserts Guides & Resources](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-resources.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-resources.yml) - _Inserts each link listed in `resources.yml` into the readme_
 - [![🛣️ Inserts Learning Roadmap](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-roadmap.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-roadmap.yml) - _Parses + inserts roadmap chart from the code in `guides/roadmap.mmd`_
 - [![🪞 Mirror to Codeberg](https://github.com/BangladeshOS/bangladesh/actions/workflows/mirror.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/mirror.yml) - _Syncs the current state of the repository over to Codeberg_
 - [![🚢 Trigger Deployment](https://github.com/BangladeshOS/bangladesh/actions/workflows/trigger-web-deploy.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/trigger-web-deploy.yml) - _After changes merged into `main` branch, deploy site to Netlify_
-- [![🚦 Check Contribution](https://github.com/BangladeshOS/bangladesh/actions/workflows/check-contribution.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/check-contribution.yml) - _Validates PRs where changes made to `bangladeshos.yml`_
+- [![🚦 Check Contribution](https://github.com/BangladeshOS/bangladesh/actions/workflows/check-contribution.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/check-contribution.yml) - _Validates PRs where changes made to `bangladesh-bot.yml`_
 - [![🎃 Add Hacktoberfest Label](https://github.com/BangladeshOS/bangladesh/actions/workflows/adds-hacktoberfest-label.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/adds-hacktoberfest-label.yml) - _Adds Hacktoberfest-accepted tag to valid PRs opened during October_
 
 
