@@ -8,7 +8,7 @@ So if you edit anything between the xx-start / xx-end tags - it will be over-wri
 <h1 align="center">Bangladesh Open Source!</h1>
 
 <p align="center">
-<a><img src="https://raw.githubusercontent.com/BangladeshOS/bangladeshos/main/.github/logo.svg" width="128" /><br /></a>
+<a><img src="https://raw.githubusercontent.com/bangladeshos/bangladesh/refs/heads/main/.github/logo.svg" width="128" /><br /></a>
 <b><i>Tools and resources to help you get started with open source</i></b>
 <br />
 <i>Create your first pull request here!</i><br />
