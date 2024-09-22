@@ -1,5 +1,5 @@
 """
-Assortment of checks run against new PRs, when bangladeshos.yml is appended to
+Assortment of checks run against new PRs, when bangladesh-bot.yml is appended to
 The script formats results into markdown, and posts as a comment on the PR
 It checks:
 - The YAML is still valid and parsable
@@ -26,13 +26,13 @@ from requests.exceptions import RequestException
 """ The username / org where the repository is located """
 REPO_OWNER = os.environ.get("REPO_OWNER", "bangladeshos")
 """ The name of the repository """
-REPO_NAME = os.environ.get("REPO_NAME", "bangladeshos")
+REPO_NAME = os.environ.get("REPO_NAME", "bangladeshos.github.io")
 """ A GitHub access token, required for higher rate-limit when fetching data """
 GH_ACCESS_TOKEN = os.environ.get("GH_ACCESS_TOKEN", None)
 """ The directory where this script is located """
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 """ The relative path to the YAML file containing the user-contributed content """
-CONTRIBUTORS_FILE_PATH = os.path.join(SCRIPT_DIR, "..", "bangladeshos.yml")
+CONTRIBUTORS_FILE_PATH = os.path.join(SCRIPT_DIR, "..", "bangladesh-bot.yml")
 
 # Configure Logging
 LOG_LEVEL = os.environ.get("LOG_LEVEL", "INFO").upper()
@@ -190,7 +190,7 @@ def run_checks(user, contributor_data, pr_body):
 
     if not check_valid_yaml():
         errors.append(
-            "- It looks like there is a syntax error in bangladeshos.yml. "
+            "- It looks like there is a syntax error in bangladesh-bot.yml. "
             "You'll need to fix that before your PR can be reviewed. "
             "Using a [YAML Validator](https://appdevtools.com/yaml-validator) might help."
         )

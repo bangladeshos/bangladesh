@@ -36,7 +36,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 """ The relative path to the markdown file to update"""
 README_PATH = os.path.join(SCRIPT_DIR, "..", ".github/README.md")
 """ The relative path to the YAML file containing the user-contributed content """
-CONTRIBUTORS_FILE_PATH = os.path.join(SCRIPT_DIR, "..", "bangladeshos.yml")
+CONTRIBUTORS_FILE_PATH = os.path.join(SCRIPT_DIR, "..", "bangladesh-bot.yml")
 """ Need to use a cache file to avoid hitting the rate limit """
 CACHE_FILE = os.path.join(SCRIPT_DIR, "cache.json")
 

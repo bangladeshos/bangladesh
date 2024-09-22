@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [ main ]
-    paths: ['bangladeshos.yml']
+    paths: ['bangladesh-bot.yml']
     
 jobs:
   build:

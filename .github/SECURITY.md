@@ -22,7 +22,7 @@ Please do not report exploitable security vulnerabilities through public GitHub 
 
 We're especially interested in vulnerabilities in:
 
-- **Data Integrity**: Manipulations or unintended uses of the data in bangladeshos.yml and resources.yml.
+- **Data Integrity**: Manipulations or unintended uses of the data in bangladesh-bot.yml and resources.yml.
 - **Scripts in /lib/**: Any issues that could lead to data corruption, leak, or other security concerns.
 - **Static Website in /web/**: Vulnerabilities that might expose user data, lead to misinformation, or can manipulate the content displayed.
 - **Guides in /guides/**: Though these are mainly markdown files, any misuse that could lead to confusion or misinformation is crucial.
