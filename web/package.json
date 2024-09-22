@@ -1,9 +1,9 @@
 {
   "name": "bangladeshos",
-  "description": "The website for the Git Into Bangladesh Open Source project",
+  "description": "The website for the Bangladesh Open Source project",
   "version": "0.1.0",
   "author": "Bangladesh Open Source",
-  "homepage": "https://github.com/bangladeshos/bangladeshos.github.io",
+  "homepage": "https://github.com/bangladeshos/bangladeshos",
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",
@@ -36,6 +36,8 @@
     "@astrojs/svelte": "^4.0.4",
     "dotenv": "^16.3.1",
     "js-yaml": "^4.1.0",
+    "micromark-util-combine-extensions": "^2.0.0",
+    "node-fetch": "^3.3.2",
     "svelte": "^4.2.3"
   }
 }

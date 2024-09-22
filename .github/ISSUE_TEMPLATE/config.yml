@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General Support
+    url: https://github.com/BangladeshOS/bangladeshos.github.io.github.io/discussions
+    about: 🫂 Need any help? We got you - check out our Discussions page
+  - name: Author Contact
+    url: https://bangladeshos.github.io/contact
+    about: 📨 Need to get in touch with the author? You can DM us here
+  - name: Sponsor us
+    url: https://github.com/sponsors/bangladeshos
+    about: 💖 If you've found this project helpful, consider sponsoring us on GitHub

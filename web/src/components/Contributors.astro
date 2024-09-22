@@ -1,0 +1,190 @@
+---
+import yaml from 'js-yaml';
+
+const GITHUB_TOKEN = process.env.GH_ACCESS_TOKEN;
+
+const repo = 'bangladeshos/bangladeshos';
+
+const contributorCommentsUrl = `https://raw.githubusercontent.com/${repo}/main/bangladeshos.yml`;
+
+const placeholderImage = 'https://i.ibb.co/X231Rq8/octo-no-one.png';
+
+const fetchGitHubUserInfo = async (username) => {
+  const headers = GITHUB_TOKEN ? { 'Authorization': `token ${GITHUB_TOKEN}` } : undefined;
+  const response = await fetch(`https://api.github.com/users/${username}`, { headers });
+  if (!response.ok) return null;
+  const userInfo = await response.json();
+  return {
+    fullName: userInfo.name || username,
+    avatarUrl: userInfo.avatar_url || placeholderImage,
+  };
+};
+
+const fetchContributorComments = async () => {
+  const response = await fetch(contributorCommentsUrl);
+  const textData = await response.text();
+  const data = yaml.load(textData);
+
+  if (!data || !data.contributors) return [];
+
+  // Fetch GitHub user info for each contributor
+  for (const contributor of data.contributors) {
+    contributor.profile = `https://github.com/${contributor.username}`;
+    const userInfo = await fetchGitHubUserInfo(contributor.username);
+    if (userInfo) {
+      contributor.fullName = userInfo.fullName;
+      contributor.avatarUrl = userInfo.avatarUrl;
+    }
+  }
+
+  return data.contributors.reverse();
+};
+
+const fetchStargazers = async (): Promise<string[]> => {
+  const headers = GITHUB_TOKEN ? { 'Authorization': `token ${GITHUB_TOKEN}` } : undefined;
+  let url = `https://api.github.com/repos/${repo}/stargazers?per_page=100`;
+  let stargazers = [];
+
+  const getNextLink = (linkHeader) => {
+    if (!linkHeader) return null;
+    const links = linkHeader.split(',');
+    const nextLink = links.find(link => link.includes('rel="next"'));
+    if (!nextLink) return null;
+    const match = nextLink.match(/<(.*)>/);
+    return match ? match[1] : null;
+  };
+
+  while (url) {
+    const response = await fetch(url, { headers });
+    const data = await response.json();
+
+    if (Array.isArray(data)) {
+      stargazers = stargazers.concat(data.map(stargazer => stargazer.login.toLowerCase()));
+    } else if (data.message && data.message.includes('API rate limit exceeded')) {
+      console.warn("GitHub API rate limit exceeded");
+      break;
+    }
+
+    url = getNextLink(response.headers.get('Link'));
+  }
+
+  return stargazers;
+};
+
+const contributors = await fetchContributorComments();
+
+const stargazers = await fetchStargazers();
+
+const stargazerClass = (username) => stargazers.includes(username.toLowerCase()) ? 'stargazer' : '';
+
+---
+
+<section>
+  <p class="how-include-me">
+    <b>Want to be included here?</b>
+    Just add your name to <a href={`https://github.com/${repo}/blob/main/bangladeshos.yml`}><code>bangladeshos.yml</code></a>, 
+    then check out the <a href={`https://github.com/${repo}/blob/main/.github/CONTRIBUTING.md`}>contributing guide</a> to submit a PR.
+  </p>
+  <ul class="user-response-wrapper">
+    {contributors && contributors.map((contributor) => (
+      <li class={`user-response-block ${stargazerClass(contributor.username)}`}>
+        <a class="user" href={contributor.profile}>
+          <img class="avatar" width="64" src={contributor.avatarUrl} alt={contributor.username} />
+          <span class="full-name">
+            {contributor.fullName}
+          </span>
+        </a>
+        <div class="content">
+          <strong class="question">{contributor.question}</strong><br />
+          <i class="response">{contributor.response}</i>
+        </div>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style lang="scss">
+  @use '../assets/scss/base/breakpoint' as *;
+  section {
+    width: 96vw;
+    margin: 0 auto;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  }
+  .how-include-me {
+    @apply text-center text-lg;
+    @apply p-4 my-4;
+    @apply mx-auto;
+    @apply max-w-screen-2xl;
+    @apply text-gray-500;
+    @apply rounded;
+    background-color: var(--neutral-background);
+    b { margin-right: 0.5rem; }
+
+  }
+  .user-response-wrapper {
+    @apply
+      mx-auto
+      max-w-screen-2xl
+      grid
+      grid-cols-1
+      gap-4
+      sm:grid-cols-1
+      md:grid-cols-1
+      lg:grid-cols-2
+      xl:grid-cols-3;
+  }
+
+  .user-response-block {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: var(--neutral-background);
+    padding: 0.5rem;
+    .user {
+      flex: 0 0 6rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      .avatar {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+      }
+
+      .full-name {
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+
+    .content {
+      flex: 1;
+      padding-left: 1rem;
+
+      .question, 
+      .response {
+        font-size: 1rem;
+      }
+    }
+
+    &.stargazer {
+      &::after {
+        content: '⭐️';
+        position: absolute;
+        right: -1rem;
+        top: -1.25rem;
+        font-size: 2rem;
+        transition: transform 0.2s ease-in-out;
+      }
+      &:hover::after {
+        transform: scale(1.15) rotate(7deg);
+      }
+    }
+  }
+
+
+</style>

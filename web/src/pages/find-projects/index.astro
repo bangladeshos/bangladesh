@@ -1,0 +1,11 @@
+---
+import DefaultLayout from '../../layouts/DefaultLayout.astro'
+import { languages } from '../../utils/languages'
+import LanguageList from '../../components/LanguageList.svelte';
+
+---
+<DefaultLayout name="Find a Project">
+<section>
+  <LanguageList languages={languages} />
+</section>
+</DefaultLayout>

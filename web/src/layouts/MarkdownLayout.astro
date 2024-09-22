@@ -1,0 +1,77 @@
+---
+import DefaultLayout from './DefaultLayout.astro'
+
+const { frontmatter } = Astro.props
+---
+
+<DefaultLayout title={frontmatter?.title}>
+  <div class="container">
+    <div class="space-content my-12 markdown-guide">
+      <slot />
+    </div>
+  </div>
+</DefaultLayout>
+
+<style lang="scss" is:global>
+  .markdown-guide {
+    ul {
+      list-style: circle;
+    }
+    ol {
+      list-style: auto;
+    }
+    code {
+      background: var(--neutral-background);
+      padding: 0.1rem 0.2rem;
+      border-radius: 4px;
+    }
+    pre code {
+      background: none;
+    }
+    blockquote {
+      border-left: 4px solid var(--action-color);
+      background: var(--neutral-background);
+      border-radius: 4px;
+      padding: 0.25rem 0.25rem 0.25rem 1rem;
+      margin-left: 0;
+    }
+    hr {
+      border: 0;
+      border-top: 2px solid var(--neutral-background);
+    }
+
+    table {
+      border: 2px solid var(--neutral-background);
+      border-collapse: separate;
+      border-radius: 4px;
+      border-spacing: 0;
+      overflow: hidden;
+      th, td {
+        padding: 0.5rem;
+        border: 1px solid var(--neutral-background);
+      }
+      th {
+        background-color: var(--neutral-background);
+        font-weight: bold;
+      }
+      tr:first-child th:first-child, table tr:first-child td:first-child {
+        border-top-left-radius: 4px;
+      }
+      tr:first-child th:last-child, table tr:first-child td:last-child {
+        border-top-right-radius: 4px;
+      }
+      tr:last-child th:first-child, table tr:last-child td:first-child {
+        border-bottom-left-radius: 4px;
+      }
+      tr:last-child th:last-child, table tr:last-child td:last-child {
+        border-bottom-right-radius: 4px;
+      }
+    }
+
+    ::selection {
+      background: var(--action-color);
+      color: var(--neutral-background);
+    }
+
+  }  
+</style>

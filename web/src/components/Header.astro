@@ -1,0 +1,74 @@
+---
+import Navigation from '../components/Navigation.astro'
+import { SkipLinks } from 'accessible-astro-components'
+import { Icon } from 'astro-icon'
+
+const guides = await Astro.glob('./../pages/guides/*.md');
+
+---
+
+<header>
+  <SkipLinks />
+  <Navigation>
+    <li class="menu-item">
+      <a href="/">Home</a>
+    </li>
+    <li class="menu-item">
+      <a href="/guestbook/">Guestbook</a>
+    </li>
+    <li class="menu-item">
+      <a href="/find-projects/">Find Projects</a>
+    </li>
+    <li class="menu-item">
+      <a href="/roadmap/">Roadmap</a>
+    </li>
+    <li class="menu-item has-dropdown">
+      <button aria-haspopup="true" aria-expanded="false">Guides</button>
+      <ul class="dropdown-menu">
+        { guides.map((guide) => (
+          <li class="submenu-item" title={guide.frontmatter.description}>
+            { guide.frontmatter.icon && <Icon name={guide.frontmatter.icon} /> }
+            <a href={`${guide.url}`}>{ guide.frontmatter.title }</a>
+          </li>
+        ))}
+      </ul>
+    </li>
+    <li class="menu-item type-icon">
+      <a href="https://github.com/bangladeshos/bangladeshos" title="Go to the GitHub page">
+        <Icon pack="ion" name="logo-github" />
+      </a>
+    </li>
+  </Navigation>
+</header>
+
+<style lang="scss" is:global>
+  @use '../assets/scss/base/outline' as *;
+
+  header {
+    li {
+      display: flex;
+      gap: 0.5rem;
+    }
+    [astro-icon] {
+        margin-top: -4px;
+        width: 30px;
+
+        path {
+          fill: var(--action-color);
+          transition: fill 0.2s ease-in-out;
+        }
+      }
+    .type-icon a {
+      display: block;
+
+      &:hover {
+        [astro-icon] path {
+          fill: var(--action-color-state);
+        }
+      }
+    }
+    .submenu-item {
+      [astro-icon] { width: 20px; opacity: 0.8; }
+    }
+  }
+</style>
