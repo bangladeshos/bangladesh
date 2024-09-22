@@ -125,7 +125,7 @@ Once your PR is merged, you've made a successful contribution!
 	Article sourced from https://github.com/bangladeshos/bangladesh
 	Licensed under MIT License, (c) 2024 Bangladesh Open Source
 	---
-	This file was auto-generated at 2024-09-22 20:05:08.113832
+	This file was auto-generated at 2024-09-22 20:22:38.646605
 	from /home/runner/work/bangladesh/bangladesh/guides/submit-your-first-pr-cli.md
 	using /home/runner/work/bangladesh/bangladesh/lib/copy_resources_to_site.py
 -->

@@ -53,7 +53,7 @@ The following article should give you some pointers that you can use to help you
 	Article sourced from https://github.com/bangladeshos/bangladesh
 	Licensed under MIT License, (c) 2024 Bangladesh Open Source
 	---
-	This file was auto-generated at 2024-09-22 20:05:08.115078
+	This file was auto-generated at 2024-09-22 20:22:38.647752
 	from /home/runner/work/bangladesh/bangladesh/guides/open-source-for-businesses.md
 	using /home/runner/work/bangladesh/bangladesh/lib/copy_resources_to_site.py
 -->
