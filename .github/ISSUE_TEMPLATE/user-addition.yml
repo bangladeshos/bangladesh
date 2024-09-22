@@ -7,11 +7,11 @@ body:
       value: >-
         If you want your name to be listed in the readme, you should submit a
         pull request, editing
-        [`bangladeshos.yml`](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/blob/main/bangladeshos.yml)
+        [`bangladeshos.yml`](https://github.com/BangladeshOS/bangladesh/blob/main/bangladeshos.yml)
         and following the guidelines in the [contributing
-        doc](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/blob/main/.github/CONTRIBUTING.md).
+        doc](https://github.com/BangladeshOS/bangladesh/blob/main/.github/CONTRIBUTING.md).
         If you're unsure how to get started, there are plenty of
-        [guides](https://github.com/BangladeshOS/bangladeshos#open-source-guides)
+        [guides](https://github.com/bangladeshos/bangladesh#open-source-guides)
         and resources linked to in the readme
 
 
@@ -65,11 +65,11 @@ body:
     attributes:
       label: Pre-Submission Checklist
       options:
-        - label: I have checked this issue has [not already been raised](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/issues?q=is%3Aissue)
+        - label: I have checked this issue has [not already been raised](https://github.com/BangladeshOS/bangladesh/issues?q=is%3Aissue)
           required: true
-        - label: I've searched the [docs](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/tree/main/.github) for an answer
+        - label: I've searched the [docs](https://github.com/BangladeshOS/bangladesh/tree/main/.github) for an answer
           required: true
-        - label: I agree to follow thr [Code of Conduct](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/blob/main/.github/CODE_OF_CONDUCT.md)
+        - label: I agree to follow thr [Code of Conduct](https://github.com/BangladeshOS/bangladesh/blob/main/.github/CODE_OF_CONDUCT.md)
           required: true
   - type: markdown
     attributes:

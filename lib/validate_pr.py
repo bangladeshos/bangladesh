@@ -167,7 +167,7 @@ def make_final_comment(user: str, errors: []) -> str:
         result += '\n'.join(errors)
         result += (
             "\n\nPlease ensure you've read and followed the "
-            "[Contributing Guidelines](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/blob/main/.github/CONTRIBUTING.md#guidelines)"
+            "[Contributing Guidelines](https://github.com/BangladeshOS/bangladesh/blob/main/.github/CONTRIBUTING.md#guidelines)"
         )
     else:
         result += "\n\nAll automated checks have passed, a human will review your PR soon :)"

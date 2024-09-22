@@ -61,10 +61,10 @@ updated: 2024-09-22
 
 
 <!--
-	Article sourced from https://github.com/bangladeshos/bangladeshos
+	Article sourced from https://github.com/bangladeshos/bangladesh
 	Licensed under MIT License, (C) Bangladesh Open Source <info@khulnasoft.com> 2023
 	---
-	This file was auto-generated at 2024-09-22 19:49:20.101016
-	from /home/runner/work/bangladeshos.github.io/bangladeshos.github.io/guides/submit-your-first-pr-ui.md
-	using /home/runner/work/bangladeshos.github.io/bangladeshos.github.io/lib/copy_resources_to_site.py
+	This file was auto-generated at 2024-09-22 19:59:51.624007
+	from /workspaces/bangladesh/guides/submit-your-first-pr-ui.md
+	using /workspaces/bangladesh/lib/copy_resources_to_site.py
 -->

@@ -18,7 +18,7 @@ The project is overseen by a group of maintainers. These individuals have the fi
 
 ## Contributing
 
-Anyone can contribute to the project. Contributions can come in the form of code, documentation, design, and more. All contributors are encouraged to create a pull request and engage in discussions. For more information, refer to our [CONTRIBUTING.md](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/blob/main/.github/CONTRIBUTING.md).
+Anyone can contribute to the project. Contributions can come in the form of code, documentation, design, and more. All contributors are encouraged to create a pull request and engage in discussions. For more information, refer to our [CONTRIBUTING.md](https://github.com/BangladeshOS/bangladesh/blob/main/.github/CONTRIBUTING.md).
 
 ## Decision Making
 
@@ -29,7 +29,7 @@ Anyone can contribute to the project. Contributions can come in the form of code
 
 ## Licensing and Attribution
 
-This project is licensed under the MIT License, which allows for reuse of the code for any purpose with proper attribution and without warranty. The details of the MIT License can be found in our [LICENSE](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/blob/main/LICENSE) file.
+This project is licensed under the MIT License, which allows for reuse of the code for any purpose with proper attribution and without warranty. The details of the MIT License can be found in our [LICENSE](https://github.com/BangladeshOS/bangladesh/blob/main/LICENSE) file.
 
 ### Raising a Dispute
 If you believe there's been a violation of the licensing terms, or you have any concerns regarding the project's use of code, assets, or intellectual property:
@@ -92,7 +92,7 @@ In the case of conflicts or disputes among contributors:
 
 ## Code of Conduct
 
-All contributors, maintainers, and participants in are expected to follow the project's [Code of Conduct](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/blob/main/.github/CODE_OF_CONDUCT.md). This code provides guidance on how to interact respectfully and inclusively within our community.
+All contributors, maintainers, and participants in are expected to follow the project's [Code of Conduct](https://github.com/BangladeshOS/bangladesh/blob/main/.github/CODE_OF_CONDUCT.md). This code provides guidance on how to interact respectfully and inclusively within our community.
 
 Failure to adhere to the Code of Conduct will not be taken lightly. Potential consequences for violating the Code of Conduct include:
 

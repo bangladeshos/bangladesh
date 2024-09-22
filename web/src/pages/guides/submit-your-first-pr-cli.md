@@ -122,10 +122,10 @@ Once your PR is merged, you've made a successful contribution!
 
 
 <!--
-	Article sourced from https://github.com/bangladeshos/bangladeshos
+	Article sourced from https://github.com/bangladeshos/bangladesh
 	Licensed under MIT License, (C) Bangladesh Open Source <info@khulnasoft.com> 2023
 	---
-	This file was auto-generated at 2024-09-22 19:49:20.102208
-	from /home/runner/work/bangladeshos.github.io/bangladeshos.github.io/guides/submit-your-first-pr-cli.md
-	using /home/runner/work/bangladeshos.github.io/bangladeshos.github.io/lib/copy_resources_to_site.py
+	This file was auto-generated at 2024-09-22 19:59:51.625894
+	from /workspaces/bangladesh/guides/submit-your-first-pr-cli.md
+	using /workspaces/bangladesh/lib/copy_resources_to_site.py
 -->

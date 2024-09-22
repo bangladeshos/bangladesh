@@ -32,11 +32,11 @@ body:
     attributes:
       label: Pre-Submission Checklist
       options:
-        - label: I have checked this issue has [not already been raised](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/issues?q=is%3Aissue)
+        - label: I have checked this issue has [not already been raised](https://github.com/BangladeshOS/bangladesh/issues?q=is%3Aissue)
           required: true
-        - label: I've searched the [docs](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/tree/main/.github) for an answer
+        - label: I've searched the [docs](https://github.com/BangladeshOS/bangladesh/tree/main/.github) for an answer
           required: true
-        - label: I agree to follow thr [Code of Conduct](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/blob/main/.github/CODE_OF_CONDUCT.md)
+        - label: I agree to follow thr [Code of Conduct](https://github.com/BangladeshOS/bangladesh/blob/main/.github/CODE_OF_CONDUCT.md)
           required: true
   - type: markdown
     attributes:

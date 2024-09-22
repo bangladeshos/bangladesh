@@ -244,15 +244,15 @@ User | Contribution
 
 ## Finding Projects
 
-A common struggle for a lot of new developers, when getting started with open source, is just finding projects to contribute to. We've put together a guide to help you with this, see: [Finding Projects to Contribute to](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/blob/main/guides/finding-projects-to-contribute-to.md), as well as a list of projects tagged as welcoming for first-time contributors [bangladeshos.github.io/find-projects](https://www.bangladeshos.github.io/find-projects/).
+A common struggle for a lot of new developers, when getting started with open source, is just finding projects to contribute to. We've put together a guide to help you with this, see: [Finding Projects to Contribute to](https://github.com/BangladeshOS/bangladesh/blob/main/guides/finding-projects-to-contribute-to.md), as well as a list of projects tagged as welcoming for first-time contributors [bangladeshos.github.io/find-projects](https://www.bangladeshos.github.io/find-projects/).
 
 The following hand-picked projects, may be a good place to start:
 
 <!-- projects-start -->
-- [https://github.com/BangladeshOS/bangladeshos.github.io.github.io](https://github.com/BangladeshOS/bangladeshos.github.io.github.io)
+- [https://github.com/BangladeshOS/bangladesh](https://github.com/BangladeshOS/bangladesh)
 <!-- projects-end -->
 
-Have I missed any? Add yours to this list, by including it under the `projects` section in [`resources.yml`](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/blob/main/resources.yml) and following the guidelines in [`CONTRIBUTING.md`](/.github/CONTRIBUTING.md) to submit a PR.
+Have I missed any? Add yours to this list, by including it under the `projects` section in [`resources.yml`](https://github.com/BangladeshOS/bangladesh/blob/main/resources.yml) and following the guidelines in [`CONTRIBUTING.md`](/.github/CONTRIBUTING.md) to submit a PR.
 
 <p align="right"><sup><a href="#bangladeshos">⬆️ Back to Top</a></sup></p>
 
@@ -346,16 +346,16 @@ We have a non-GitHub mirror available at: **[codeberg.org/bangladeshos/banglades
 ### Automations
 User-generated content is inserted automatically, using the Python scripts in the [`lib/`](/lib) directory, and run using GitHub Actions.
 
-- [![📖 Copy guides to website](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/copy-guides.yml/badge.svg)](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/copy-guides.yml) - _Combines `guides/` with metadata in `resources.yml`, to deploy site_
-- [![🌍 Deploy to GitHub Pages](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/deploy-website.yml/badge.svg)](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/deploy-website.yml) - _Builds and deploys the latest version of `web/` to GitHub Pages_
-- [![👥 Insert Credits](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/insert-credits.yml/badge.svg)](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/insert-credits.yml) - _Inserts credits to helpful users, contributors and sponsors into the readme_
-- [![💬 Inserts Contributor Content](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/insert-comments.yml/badge.svg)](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/insert-comments.yml) - _Generates user-contributed content from `bangladeshos.yml`_
-- [![📚 Inserts Guides & Resources](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/insert-resources.yml/badge.svg)](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/insert-resources.yml) - _Inserts each link listed in `resources.yml` into the readme_
-- [![🛣️ Inserts Learning Roadmap](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/insert-roadmap.yml/badge.svg)](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/insert-roadmap.yml) - _Parses + inserts roadmap chart from the code in `guides/roadmap.mmd`_
-- [![🪞 Mirror to Codeberg](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/mirror.yml/badge.svg)](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/mirror.yml) - _Syncs the current state of the repository over to Codeberg_
-- [![🚢 Trigger Deployment](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/trigger-web-deploy.yml/badge.svg)](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/trigger-web-deploy.yml) - _After changes merged into `main` branch, deploy site to Netlify_
-- [![🚦 Check Contribution](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/check-contribution.yml/badge.svg)](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/check-contribution.yml) - _Validates PRs where changes made to `bangladeshos.yml`_
-- [![🎃 Add Hacktoberfest Label](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/adds-hacktoberfest-label.yml/badge.svg)](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/actions/workflows/adds-hacktoberfest-label.yml) - _Adds Hacktoberfest-accepted tag to valid PRs opened during October_
+- [![📖 Copy guides to website](https://github.com/BangladeshOS/bangladesh/actions/workflows/copy-guides.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/copy-guides.yml) - _Combines `guides/` with metadata in `resources.yml`, to deploy site_
+- [![🌍 Deploy to GitHub Pages](https://github.com/BangladeshOS/bangladesh/actions/workflows/deploy-website.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/deploy-website.yml) - _Builds and deploys the latest version of `web/` to GitHub Pages_
+- [![👥 Insert Credits](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-credits.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-credits.yml) - _Inserts credits to helpful users, contributors and sponsors into the readme_
+- [![💬 Inserts Contributor Content](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-comments.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-comments.yml) - _Generates user-contributed content from `bangladeshos.yml`_
+- [![📚 Inserts Guides & Resources](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-resources.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-resources.yml) - _Inserts each link listed in `resources.yml` into the readme_
+- [![🛣️ Inserts Learning Roadmap](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-roadmap.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/insert-roadmap.yml) - _Parses + inserts roadmap chart from the code in `guides/roadmap.mmd`_
+- [![🪞 Mirror to Codeberg](https://github.com/BangladeshOS/bangladesh/actions/workflows/mirror.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/mirror.yml) - _Syncs the current state of the repository over to Codeberg_
+- [![🚢 Trigger Deployment](https://github.com/BangladeshOS/bangladesh/actions/workflows/trigger-web-deploy.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/trigger-web-deploy.yml) - _After changes merged into `main` branch, deploy site to Netlify_
+- [![🚦 Check Contribution](https://github.com/BangladeshOS/bangladesh/actions/workflows/check-contribution.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/check-contribution.yml) - _Validates PRs where changes made to `bangladeshos.yml`_
+- [![🎃 Add Hacktoberfest Label](https://github.com/BangladeshOS/bangladesh/actions/workflows/adds-hacktoberfest-label.yml/badge.svg)](https://github.com/BangladeshOS/bangladesh/actions/workflows/adds-hacktoberfest-label.yml) - _Adds Hacktoberfest-accepted tag to valid PRs opened during October_
 
 
 <details>
@@ -383,7 +383,7 @@ Huge thanks to the following kind people, for their ongoing support in funding t
 
 ## License
 
-> _**[BangladeshOS/bangladeshos](https://github.com/BangladeshOS/bangladeshos)** is licensed under [MIT](https://github.com/BangladeshOS/bangladeshos.github.io.github.io/blob/HEAD/LICENSE) © [Bangladesh Open Source](https://bangladeshos.github.io) 2023._<br>
+> _**[BangladeshOS/bangladeshos](https://github.com/bangladeshos/bangladesh)** is licensed under [MIT](https://github.com/BangladeshOS/bangladesh/blob/HEAD/LICENSE) © [Bangladesh Open Source](https://bangladeshos.github.io) 2023._<br>
 > <sup align="right">For information, see <a href="https://tldrlegal.com/license/mit-license">TLDR Legal > MIT</a></sup>
 
 <details>

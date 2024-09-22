@@ -70,8 +70,8 @@ def main():
 
             footer = (
                 f"\n\n<!--\n"
-                f"\tArticle sourced from https://github.com/bangladeshos/bangladeshos\n"
-                f"\tLicensed under MIT License, (C) Bangladesh Open Source <info@khulnasoft.com> 2023\n"
+                f"\tArticle sourced from https://github.com/bangladeshos/bangladesh\n"
+                f"\tLicensed under MIT License, (c) 2024 Bangladesh Open Source\n"
                 f"\t---\n"
                 f"\tThis file was auto-generated at {datetime.now()}\n"
                 f"\tfrom {source_file_path}\n"
