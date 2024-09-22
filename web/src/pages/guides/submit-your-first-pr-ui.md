@@ -64,7 +64,7 @@ updated: 2024-09-22
 	Article sourced from https://github.com/bangladeshos/bangladesh
 	Licensed under MIT License, (c) 2024 Bangladesh Open Source
 	---
-	This file was auto-generated at 2024-09-22 20:22:38.645375
-	from /home/runner/work/bangladesh/bangladesh/guides/submit-your-first-pr-ui.md
-	using /home/runner/work/bangladesh/bangladesh/lib/copy_resources_to_site.py
+	This file was auto-generated at 2024-09-22 21:41:14.070327
+	from /home/runner/work/bangladeshos.github.io/bangladeshos.github.io/guides/submit-your-first-pr-ui.md
+	using /home/runner/work/bangladeshos.github.io/bangladeshos.github.io/lib/copy_resources_to_site.py
 -->
