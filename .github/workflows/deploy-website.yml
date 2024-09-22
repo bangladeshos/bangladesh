@@ -21,11 +21,20 @@ jobs:
     steps:
       - name: Checkout your repository 🛎️
         uses: actions/checkout@v3
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      
       - name: Install, build, and upload site 🛠️
         uses: withastro/action@v0
         with:
           path: ./web
-          node-version: 16
+          node-version: 16 # Check if Node 16 is correct; if not, consider using 18+
           package-manager: npm
 
   deploy:
@@ -35,6 +44,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Checkout your repository 🛎️
+        uses: actions/checkout@v3
+      
       - name: Deploy to GitHub Pages 🚢
         id: deployment
         uses: actions/deploy-pages@v1
