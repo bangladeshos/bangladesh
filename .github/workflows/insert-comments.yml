@@ -38,7 +38,7 @@ jobs:
       # Commit and push the outputed JSON files
       - name: Commit and push generated files ⤴️
         run: |
-          git config --global user.name "Liss-Bot"
+          git config --global user.name "bangladesh-bot"
           git config --global user.email "info@khulnasoft.com"
           git add .github/README.md
           if git diff --staged --quiet; then

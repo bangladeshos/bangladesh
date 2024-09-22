@@ -1,4 +1,4 @@
-.PHONY: all install_lib_requirements insert_contributor_content copy_resources_to_site insert_resource_list install_web_dependencies build_web start_web
+.PHONY: all install_lib_requirements insert_contributor_content copy_resources_to_site insert_resource_list install_web_dependencies build_web start_web validate_pr insert_roadmap
 
 PYTHON := $(shell which python3 2>/dev/null || which python)
 
@@ -30,3 +30,7 @@ build_web:
 
 start_web:
 	cd web && npm run start
+
+# All target
+all: install_lib_requirements insert_contributor_content copy_resources_to_site insert_resource_list install_web_dependencies build_web insert_roadmap validate_pr
+

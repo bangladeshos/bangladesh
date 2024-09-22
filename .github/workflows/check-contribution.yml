@@ -15,7 +15,7 @@ permissions:
 jobs:
   check-contribution:
     runs-on: ubuntu-latest
-    if: github.actor != 'bangladeshos' && github.actor != 'liss-bot'
+    if: github.actor != 'bangladeshos' && github.actor != 'bangladesh-bot'
     steps:
 
       # Checkout users branch
@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: ${{ github.event.pull_request.head.sha }}
-            
+          
       # Downloads + installs Python (used for running gen scripts)  
       - name: Set up Python 🐍
         uses: actions/setup-python@v2
@@ -36,10 +36,32 @@ jobs:
           python -m pip install --upgrade pip
           cd lib && pip install -r requirements.txt
 
+      # Generate a JWT and use it for authentication
+      - name: Authenticate with GitHub App 🔑
+        id: auth
+        run: |
+          echo "Generating JWT..."
+          private_key=$(echo "${{ secrets.APP_PRIVATE_KEY }}" | tr -d '\r\n')
+          app_id=${{ secrets.APP_ID }}  # Use the secret here
+          jwt=$(python -c "
+import jwt
+import time
+
+now = int(time.time())
+payload = {
+    'iat': now,
+    'exp': now + (10 * 60),  # JWT valid for 10 minutes
+    'iss': app_id
+}
+print(jwt.encode(payload, private_key, algorithm='RS256').decode('utf-8'))
+")
+          echo "::set-output name=jwt::$jwt"
+
       # The make command triggers all the Python scripts, generates output
       - name: Run make command 🔨
         run: make validate_pr
         env:
           GITHUB_ACTOR: ${{ github.actor }}
-          GH_ACCESS_TOKEN: ${{ secrets.BOT_TOKEN }}
+          GH_ACCESS_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
           GITHUB_EVENT_PATH: ${{ github.event_path }}
+          JWT: ${{ steps.auth.outputs.jwt }}  # Use the JWT for GitHub API calls

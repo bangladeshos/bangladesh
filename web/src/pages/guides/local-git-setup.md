@@ -179,7 +179,7 @@ To learn about those, see the [Git Configuration](https://git-scm.com/book/en/v2
 	Article sourced from https://github.com/bangladeshos/bangladesh
 	Licensed under MIT License, (c) 2024 Bangladesh Open Source
 	---
-	This file was auto-generated at 2024-09-22 20:40:53.278033
-	from /home/runner/work/bangladeshos.github.io/bangladeshos.github.io/guides/local-git-setup.md
-	using /home/runner/work/bangladeshos.github.io/bangladeshos.github.io/lib/copy_resources_to_site.py
+	This file was auto-generated at 2024-09-22 21:01:24.209439
+	from /workspaces/bangladesh/guides/local-git-setup.md
+	using /workspaces/bangladesh/lib/copy_resources_to_site.py
 -->
