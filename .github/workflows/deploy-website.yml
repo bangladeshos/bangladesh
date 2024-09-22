@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SITE_URL: 'https://bangladeshos.github.io'
-      BASE_PATH: '/bangladeshos'
+      BASE_PATH: '/bangladesh'
       GH_ACCESS_TOKEN: ${{ secrets.GH_WEB_PROD }}
     steps:
       - name: Checkout your repository 🛎️
