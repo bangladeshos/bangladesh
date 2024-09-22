@@ -3,7 +3,7 @@
   "description": "The website for the Bangladesh Open Source project",
   "version": "0.1.0",
   "author": "Bangladesh Open Source",
-  "homepage": "https://github.com/bangladeshos/bangladesh",
+  "homepage": "https://bangladeshos.github.io",
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",

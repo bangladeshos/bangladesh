@@ -10,11 +10,11 @@ One of the biggest barriers to entry for first-time and newer contributors is th
 
 ## How 
 
-You've got two options: The easiest, and sometimes best for just small changes is to use the GitHub UI, or Codespaces - this is explained in [this step-by-step tutorial](https://github.com/BangladeshOS/bangladesh/blob/main/guides/submit-your-first-pr-ui.md).
-In the longer term, and especially once you're working on larger changes, you'll want to have Git installed on your system, and make changes locally, again instructions for which are [outlined here](https://github.com/BangladeshOS/bangladesh/blob/main/guides/submit-your-first-pr-cli.md).
+You've got two options: The easiest, and sometimes best for just small changes is to use the GitHub UI, or Codespaces - this is explained in [this step-by-step tutorial](https://github.com/bangladeshos/bangladeshos.github.io/blob/main/guides/submit-your-first-pr-ui.md).
+In the longer term, and especially once you're working on larger changes, you'll want to have Git installed on your system, and make changes locally, again instructions for which are [outlined here](https://github.com/bangladeshos/bangladeshos.github.io/blob/main/guides/submit-your-first-pr-cli.md).
 
 Prerequisites: You will need a GitHub account. If you're planning on making changes via the terminal, you'll also need Git installed, and an SSH key setup on your local system.
-For a step-by-step guide, see [setting up Git, GitHub, SSH](https://github.com/BangladeshOS/bangladesh/blob/main/guides/local-git-setup.md)
+For a step-by-step guide, see [setting up Git, GitHub, SSH](https://github.com/bangladeshos/bangladeshos.github.io/blob/main/guides/local-git-setup.md)
 
 ---
 
@@ -26,19 +26,19 @@ Not sure what to add or work on? Here's 10 ideas to get you started!
 
 This is probably the easiest place to start for first-time contributors. On the readme, there's a list of names and comments from developers, and you can add yours in there too! 
 
-It's important to note that you don't put this in the readme directly, but rather edit the [`bangladesh-bot.yml`](https://github.com/BangladeshOS/bangladesh/blob/main/bangladesh-bot.yml) file instead (there's a template at the top), this is then fetches some additional info from the GitHub API (like your name, picture and stargazer status) and inserts it into the readme using [this workflow](https://github.com/BangladeshOS/bangladesh/blob/main/.github/workflows/insert-comments.yml) running on GitHub Actions.
+It's important to note that you don't put this in the readme directly, but rather edit the [`bangladesh-bot.yml`](https://github.com/bangladeshos/bangladeshos.github.io/blob/main/bangladesh-bot.yml) file instead (there's a template at the top), this is then fetches some additional info from the GitHub API (like your name, picture and stargazer status) and inserts it into the readme using [this workflow](https://github.com/bangladeshos/bangladeshos.github.io/blob/main/.github/workflows/insert-comments.yml) running on GitHub Actions.
 
 ### Guides
 
 I'm working on putting together a series of guides, aimed at helping new developers get up to speed with Git, and get into Open Source.
 
-These can be found in the [`/guides`](https://github.com/BangladeshOS/bangladesh/tree/main/guides) directory, and any contributions would be much appreciated! If you're adding a new guide, it also needs to be listed in the [`resources.yml`](https://github.com/BangladeshOS/bangladesh/blob/main/resources.yml) file, for it to be shown on the website and in the readme.
+These can be found in the [`/guides`](https://github.com/bangladeshos/bangladeshos.github.io/tree/main/guides) directory, and any contributions would be much appreciated! If you're adding a new guide, it also needs to be listed in the [`resources.yml`](https://github.com/bangladeshos/bangladeshos.github.io/blob/main/resources.yml) file, for it to be shown on the website and in the readme.
 
 ### Resources
 
 The readme and website also list to some helpful external resources, as there's no point reinventing the wheel when there are already some excellent guides and tools out there.
 
-If you know of any sites that are not already listed, which you think could be helpful, you can add these into the [`resources.yml`](https://github.com/BangladeshOS/bangladesh/blob/main/resources.yml) file (under the `resources` section), and they'll be automatically inserted into the readme (using [this workflow](https://github.com/BangladeshOS/bangladesh/blob/main/.github/workflows/insert-resources.yml)).
+If you know of any sites that are not already listed, which you think could be helpful, you can add these into the [`resources.yml`](https://github.com/bangladeshos/bangladeshos.github.io/blob/main/resources.yml) file (under the `resources` section), and they'll be automatically inserted into the readme (using [this workflow](https://github.com/bangladeshos/bangladeshos.github.io/blob/main/.github/workflows/insert-resources.yml)).
 
 Keep in mind - I would ideally like to keep the resources list short, with only the best tools and websites listed, so if you're adding something ensure it meets this criteria, and provide justification.
 
@@ -46,19 +46,19 @@ Keep in mind - I would ideally like to keep the resources list short, with only 
 
 There's a section on our website<sup>[here](https://www.bangladeshos.github.io/find-projects)</sup>, and within the readme<sup>[here](https://github.com/bangladeshos/bangladesh#finding-projects)</sup> that links to repositories that are welcoming to first-time contributors.
 
-If you know of a project that you think should be included here, you can add it by editing [`resources.yml`](https://github.com/BangladeshOS/bangladesh/blob/main/resources.yml), appending the repo to the `projects` section.
+If you know of a project that you think should be included here, you can add it by editing [`resources.yml`](https://github.com/bangladeshos/bangladeshos.github.io/blob/main/resources.yml), appending the repo to the `projects` section.
 
 ### Website
 
 We've also got a simple static site, that makes it easier to read some of the guides; it's hosted on GitHub Pages, at [bangladeshos.github.io/bangladeshos](https://bangladeshos.github.io/bangladeshos/)
 
-It's built using [Astro](https://astro.build/), so is very easy to get up to speed with quickly. The source, as well as setup docs can be found in the [`web/`](https://github.com/BangladeshOS/bangladesh/tree/main/web) directory.
+It's built using [Astro](https://astro.build/), so is very easy to get up to speed with quickly. The source, as well as setup docs can be found in the [`web/`](https://github.com/bangladeshos/bangladeshos.github.io/tree/main/web) directory.
 
 ### Scripting
 
 The repo is held together with a set of pretty simple Python scripts that insert the user-contributed content in the readme, and make it available via the website.
 
-These can be found in the [`/lib`](https://github.com/BangladeshOS/bangladesh/tree/main/lib) directory.
+These can be found in the [`/lib`](https://github.com/bangladeshos/bangladeshos.github.io/tree/main/lib) directory.
 
 If you're a Python developer, you'll see that there's plenty of room for improvement here! Whether it's refactoring, writing tests, fixing a bug, adding a feature or anything else - PRs here are very much welcome!
 
@@ -91,7 +91,7 @@ There's plenty of other ways you can support open source projects!
 
 ### Still nothing?
 
-There's plenty of other repositories on GitHub looking for contributors! Whatever your skill set or level, there will surly be the perfect project for your first few open source contributions. Take a look at this guide: [Finding Projects to Contribute to](https://github.com/BangladeshOS/bangladesh/blob/main/guides/finding-projects-to-contribute-to.md)
+There's plenty of other repositories on GitHub looking for contributors! Whatever your skill set or level, there will surly be the perfect project for your first few open source contributions. Take a look at this guide: [Finding Projects to Contribute to](https://github.com/bangladeshos/bangladeshos.github.io/blob/main/guides/finding-projects-to-contribute-to.md)
 
 ---
 
@@ -107,7 +107,7 @@ When submitting a pull request, you must:
 - Agree to follow the Code of Conduct
 - Not submit low-effort or AI-generated content
 
-When adding your name and response to [`bangladesh-bot.yml`](https://github.com/BangladeshOS/bangladesh/blob/main/bangladesh-bot.yml),
+When adding your name and response to [`bangladesh-bot.yml`](https://github.com/bangladeshos/bangladeshos.github.io/blob/main/bangladesh-bot.yml),
 you must ensure that:
 - Your addition must be appended to the end of the file
 - The file must end in a single blank line
@@ -128,14 +128,14 @@ Top tips for adding a great response:
   - Drop a star on this repo, and you'll automatically get a star next to your response!
   - Your personal website / X.com profile will be automatically included, if you've included it on your GH profile
 
-When adding a resource to [`resources.yml`](https://github.com/BangladeshOS/bangladesh/blob/main/resources.yml),
+When adding a resource to [`resources.yml`](https://github.com/bangladeshos/bangladeshos.github.io/blob/main/resources.yml),
 you must:
 - Not submit blog posts or articles, unless they provide considerable value to the reader
 - Not submit anything which is duplicate content, or very similar to an existing resource
 - Disclose any association you may have to that website
 - Provide a short sentence of justification in your PR, explaining why it should be included
 
-When adding a repo to `projects` in [`resources.yml`](https://github.com/BangladeshOS/bangladesh/blob/main/resources.yml),
+When adding a repo to `projects` in [`resources.yml`](https://github.com/bangladeshos/bangladeshos.github.io/blob/main/resources.yml),
 the repository you are adding must:
 - Be welcoming to first-time contributors
 - Have clear documentation for development and contributing
@@ -145,20 +145,20 @@ the repository you are adding must:
 - Have at least 10 prior contributors
 - Have a minimum of 100 stars or 50 forks
 
-When submitting additions or changes to the guides in [`guides/`](https://github.com/BangladeshOS/bangladesh/tree/main/guides),
+When submitting additions or changes to the guides in [`guides/`](https://github.com/bangladeshos/bangladeshos.github.io/tree/main/guides),
 you must:
 - Ensure all new information is, to the best of your knowledge accurate and correct
 - Spell and grammar check your new additions, and ensure that any included links are functional
 - Not provide links to content you own, manage or are affiliated with, without disclosing your association when submitting the pull request
 - If you're adding a new guide, don't forget to also list it in the resources file, so it can be indexed
 
-When submitting changes to the website in [`web/`](https://github.com/BangladeshOS/bangladesh/tree/main/web),
+When submitting changes to the website in [`web/`](https://github.com/bangladeshos/bangladeshos.github.io/tree/main/web),
 you must:
 - Ensure the application is still fully deployable
 - Ensure there are no regressions / no new bugs introduced
 - Ensure all lint checks, tests and build scripts still pass
 
-When submitting changes to the website in [`lib/`](https://github.com/BangladeshOS/bangladesh/tree/main/lib),
+When submitting changes to the website in [`lib/`](https://github.com/bangladeshos/bangladeshos.github.io/tree/main/lib),
 you must:
 - Ensure that all scripts still run as expected
 - Ensure there are no regressions / no new bugs introduced

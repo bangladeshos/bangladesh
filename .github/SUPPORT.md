@@ -14,7 +14,7 @@ Before reaching out with your query, we recommend:
 
 If you've identified a bug or want to request a new feature:
 
-1. Search the [Issues](https://github.com/BangladeshOS/bangladesh/issues) to see if it's already been reported.
+1. Search the [Issues](https://github.com/bangladeshos/bangladeshos.github.io/issues) to see if it's already been reported.
 2. If not, open a new issue! Please provide as much information as possible to help us understand and address the issue quickly.
 
 ## 💬 Discussion & Questions
@@ -22,7 +22,7 @@ If you've identified a bug or want to request a new feature:
 For general discussion, questions about the project, or if you're unsure where to start:
 
 1. Join our community chat (if applicable).
-2. Start a discussion on the project's [Discussion tab](https://github.com/BangladeshOS/bangladesh/discussions).
+2. Start a discussion on the project's [Discussion tab](https://github.com/bangladeshos/bangladeshos.github.io/discussions).
 3. Reach out to the maintainers or community on [Twitter](https://twitter.com/Lissy_Sykes) or another social platform if you use one.
 
 ## 🚀 Get Involved!
@@ -30,7 +30,7 @@ For general discussion, questions about the project, or if you're unsure where t
 If you're excited about our project, there are many ways to get involved:
 
 1. Star the repository – it helps boost visibility and shows your support!
-2. Check out "good first issues" or "help wanted" tags in the [Issues section](https://github.com/BangladeshOS/bangladesh/issues) to get started with contributions.
+2. Check out "good first issues" or "help wanted" tags in the [Issues section](https://github.com/bangladeshos/bangladeshos.github.io/issues) to get started with contributions.
 3. Spread the word in your network and community.
 
 ## 📧 Contact
